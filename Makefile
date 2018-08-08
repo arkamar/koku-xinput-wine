@@ -26,8 +26,9 @@ $(TARGET): $(OBJ)
 	$(CXX) $(LDFLAGS) -shared -o $@ $(LDLIBS) $^
 
 device.o: device.cpp main.h jumper.h
-main.o: main.cpp main.h jumper.h
+main.o: main.cpp main.h jumper.h log.h
 xinput.o: xinput.cpp main.h jumper.h
+log.o: log.h log.c
 
 clean:
 	$(RM) $(TARGET) $(OBJ)
