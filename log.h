@@ -1,9 +1,9 @@
-#ifdef __cplusplus__
+#ifdef __cplusplus
 extern "C" {
 #endif
 
 int koku_log(const char *, ...);
 
-#ifdef __cplusplus__
+#ifdef __cplusplus
 }
 #endif
